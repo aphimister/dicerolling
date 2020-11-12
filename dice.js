@@ -2,7 +2,7 @@ const diceRoller = () => {
   return Math.floor(Math.random() * 6 + 1);
 };
 
-const rollButton = document.getElementById('roll-button'); //button to roll dice
+let rollButton = document.getElementById('roll-button'); //button to roll dice
 const diceImgList = [
   //possible dice images
   './img/dice1.png',
@@ -23,23 +23,25 @@ rollButton.addEventListener('click', () => {
   diceImg.src = diceImgList[roll - 1]; //displays die corresponding to your roll
   if (roll == 1) {
     //resets if a 1 is rolled
-    winLose.innerHTML = 'You lose <br> Play again?';
-    restart.style.display = 'inline';
-    rollButton.style.display = 'none';
+    winLose.innerHTML = 'You lose! <br> Play again?';
+    restart.style.visibility = 'visible';
+    rollButton.style.visibility = 'hidden';
   } else {
     winLose.innerHTML = '';
     total += roll; //adds the roll to a total
+    rollButton.innerHTML = 'Roll again!'
   }
   if (total >= 20) {
-    winLose.innerHTML = 'Congrats, you win <br> Play again?'; //displays winner message
-    restart.style.display = 'inline';
-    rollButton.style.display = 'none';
+    winLose.innerHTML = 'Congrats, you win!  <br> Play again?'; //displays winner message
+    restart.style.visibility = 'visible';
+    rollButton.style.visibility = 'hidden';
   }
   score.textContent = total; //updates the total
 });
 restart.addEventListener('click', () => {
-  restart.style.display = 'none';
-  rollButton.style.display = 'inline';
+  restart.style.visibility = 'hidden';
+  rollButton.innerHTML = 'Roll the die!'
+  rollButton.style.visibility = 'visible';
   winLose.innerHTML = '';
   score.textContent = total = 0;
 });
