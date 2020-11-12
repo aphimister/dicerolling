@@ -3,17 +3,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: linear-gradient(0.25turn, indigo, wheat, darksalmon);
   height: 100vh;
   font-size: 30px;
   font-family: 'Work Sans', 'sans-serif';
+  color: darkslategrey;
+  padding: 10px;
 }
-#restart {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  visibility: hidden;
+button {
+  padding: 10px;
   font-size: 20px;
   border-radius: 8px;
+  background-color: darkslategray;
+  color: wheat;
+  font-family: 'Work Sans', 'sans-serif';
+  box-shadow: 2px 2px 3px dimgrey;
+}
+#restart {
+  visibility: hidden;
 }
 #container {
   text-align: center;
@@ -22,8 +30,11 @@ body {
   border: 5px solid darkslategray;
   border-radius: 8px;
 }
+#score{
+  padding: 10px;
+}
 #win-lose {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 5px;
   height: 15%;
 }
@@ -32,9 +43,13 @@ body {
   padding-bottom: 20px;
   height: 40%;
 }
-#roll-button {
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 8px;
+#dice-image{
+  border-radius: 12px;
+}
+footer{
+  padding: 40px;
+}
+a {
+  text-decoration: none;
+  color: darkslategray;
 }

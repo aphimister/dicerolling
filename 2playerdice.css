@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(0.25turn, indigo, wheat, darksalmon);
+  height: 100vh;
+  font-size: 30px;
+  font-family: 'Work Sans', 'sans-serif';
+  color: darkslategrey;
+  padding: 10px;
+}
+button {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: darkslategray;
+  color: wheat;
+  font-family: 'Work Sans', 'sans-serif';
+  box-shadow: 2px 2px 3px dimgrey;
+}
+#container {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  background-color: wheat;
+  width: 50%;
+  height: 75%;
+  border: 5px solid darkslategray;
+  border-radius: 8px;
+}
+.player-container {
+  width: 50%;
+  height: 100%;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+.score {
+  background-color: darkslategray;
+  border-radius: 8px;
+  color: wheat;
+  margin-left: 25%;
+  width: 50%;
+  box-shadow: 2px 2px 3px dimgrey;
+}
+#button-container {
+  position: absolute;
+  transform: translate(-50%, 19%);
+  left: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  height: 80%;
+}
+.mid-container {
+  margin: 6px;
+}
+#image-container {
+  padding-top: 20px;
+  height: 200px;
+}
+#dice-image {
+  border-radius: 12px;
+}
+footer {
+  padding: 40px;
+}
+a {
+  text-decoration: none;
+  color: darkslategray;
+}
