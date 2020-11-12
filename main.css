@@ -4,50 +4,55 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(0.25turn, indigo, wheat, darksalmon);
+  background: linear-gradient(0.25turn, indigo, AntiqueWhite, darksalmon);
   height: 100vh;
-  font-size: 30px;
+  font-size: 5vmin;
   font-family: 'Work Sans', 'sans-serif';
   color: darkslategrey;
-  padding: 10px;
+  padding: 3vmin;
 }
 button {
-  padding: 10px;
-  font-size: 20px;
-  border-radius: 8px;
+  margin: 2vmin;
+  padding: 2vmin;
+  font-size: 50%;
+  border-radius:2vmin;
   background-color: darkslategray;
-  color: wheat;
+  color: AntiqueWhite;
   font-family: 'Work Sans', 'sans-serif';
-  box-shadow: 2px 2px 3px dimgrey;
+  box-shadow: 0.5vmin 0.5vmin 1vmin dimgrey;
 }
 #restart {
   visibility: hidden;
 }
 #container {
   text-align: center;
-  width: 40%;
-  height: 70%;
-  border: 5px solid darkslategray;
-  border-radius: 8px;
+  width: 50vw;
+  min-width: 250px;
+  height: 80vh;
+  max-height: 100vw;
+  border: 1vmin solid darkslategray;
+  border-radius: 2vmin;
 }
 #score{
-  padding: 10px;
+  padding: 1vmin;
 }
 #win-lose {
-  padding-top: 20px;
-  padding-bottom: 5px;
-  height: 15%;
+  padding: 4vmin;
+  height: 7vh;
 }
 #image-container {
-  padding-top: 2%;
-  padding-bottom: 20px;
+  padding: 1vmin;
   height: 40%;
+  width: auto;
 }
 #dice-image{
-  border-radius: 12px;
+  border-radius: 3vmin;
+  width: 30vmin;
+  height: auto;
+  box-shadow: 0.5vmin 0.5vmin 1vmin dimgrey;
 }
 footer{
-  padding: 40px;
+  padding: 2%;
 }
 a {
   text-decoration: none;
